@@ -1,0 +1,19 @@
+From: Chris Mayo <aklhfex@gmail.com>
+Date: Mon, 31 Oct 2022 19:20:53 +0000
+Subject: [PATCH] Stop requiring six
+Forwarded: https://github.com/glyph/automat/pull/149
+Bug: 1040368
+
+Not used since:
+ff3ecd5 ("start attempting to fix ci", 2022-06-11)
+
+--- a/setup.py
++++ b/setup.py
+@@ -20,7 +20,6 @@
+     ],
+     install_requires=[
+         "attrs>=19.2.0",
+-        "six",
+     ],
+     extras_require={
+         "visualize": ["graphviz>0.5.1",
